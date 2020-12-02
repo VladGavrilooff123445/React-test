@@ -1,30 +1,16 @@
-import React, {useState} from 'react'
-import axios from "axios";
+import React from 'react'
 
 
- function ComponentTrack() {
 
-    const [charts, setCharts] = useState([]);
-    const getCharts = async () => {
-        try {
-            const {data} = await axios.get('http://ws.audioscrobbler.com/2.0/?api_key=23d931bce89a8adc364d061a22e426af&format=json&method=chart.gettoptracks');
-            setCharts(data.tracks.track);
+class ComponentTrack extends React.Component {
 
-        } catch (error) {
-            console.error(error);
-        }
+    render() {
+        return (
+            <div className="flex-column">
+                <a href={this.props.url}>song</a>
+            </div>
+        );
     }
-
-    React.useEffect(() => {
-        getCharts();
-    }, []);
-
-    return (
-        <div>{charts.map((element) => {
-            <a>{element.name}</a>
-        })}</div>
-    );
-
 }
 
 
