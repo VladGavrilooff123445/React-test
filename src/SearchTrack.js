@@ -3,7 +3,7 @@ import React from 'react'
 class SearchTrack extends React.Component {
     render() {
         return (
-            <div className="input-group mb-3 mr-auto">
+            <div className="input-group mb-3">
                 <div className="input-group-prepend">
                     <button className="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
                 </div>
