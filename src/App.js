@@ -4,6 +4,7 @@ import SearchTrack from "./SearchTrack";
 import axios from 'axios';
 import HeadComponent from "./HeadComponent";
 import ComponentTrack from "./ComponentTrack";
+import AboutArtist from "./pages/About artist";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                     <SearchTrack/>
                     <Switch>
                         <Route path={'/'} exact component={ComponentTrack}/>
+                        <Route path={'/About artist'} component={AboutArtist}/>
                     </Switch>
                 </div>
             </div>

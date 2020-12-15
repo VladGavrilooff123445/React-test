@@ -6,7 +6,7 @@ class HeadComponent extends React.Component {
             <div className="jumbotron jumbotron-fluid alert-primary">
                 <div className="container">
                     <h1 className="display-4">React Test App</h1>
-                    <p className="lead">It's application for test in Room4 IT company.</p>
+                    <p className="lead">It's application for my skills in React, Redux and Thunk </p>
                 </div>
             </div>
         );
